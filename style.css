@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(160, 110, 69)
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 0.5rem solid rgb(117, 58, 10);
+    background-color: rgb(165, 91, 30);
+    color: whitesmoke;
+}
+
+main {
+    padding:2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+input {
+    border: 0.1rem solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(117, 58, 10);
+    color: whitesmoke;
+    border: 0.1rem solid black;
+    cursor: pointer;
+}
+
+.content {
+    width: 44%;
+    margin: 0 auto;
+}
+
+.container form input {
+    flex: 1;
+}
+
+.container form {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    display: block;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.5rem;
+    border: 0.1rem solid white;
+    background-color: rgb(165, 91, 30);
+    border-radius: 5px;
+    list-style: none;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #a65c1e;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.tarefa input:checked + span {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.tarefa:has(input:checked) {
+    background-color: #5a3a1e;
+}
+
+.tarefa span {
+    flex: 1;
+}
+
+.tarefa button {
+    background-color: rgb(243, 242, 240);
+    font-size: 18px;
+    cursor: pointer;
+}
